@@ -1,3 +1,12 @@
+# Projeto para calcular minutos excedentes com novos planos da empresa VxTel
+ Utilizado apenas HTML, CSS, Javascript e Jquery
+ 
+ Responsivo, sendo capaz também de ser utilizado via tablet ou smartphone.
+
+
+
+
+
 # VxTel
 A empresa de telefonia VxTel, especializada em chamadas de longa distância nacional, vai
 colocar um novo produto no mercado chamado FaleMais.
@@ -15,7 +24,7 @@ de origem e destino:
 |  018 |  011 | 1.90 |
 
 Com o novo produto FaleMais da VxTel o cliente adquire um plano e pode falar de graça até
-um determinado tempo (em minutos) e só́ paga os minutos excedentes. Os minutos
+um determinado tempo (em minutos) e só paga os minutos excedentes. Os minutos
 excedentes tem um acrescimo de 10% sobre a tarifa normal do minuto. Os planos são
 FaleMais 30 (30 minutos), FaleMais 60 (60 minutos) e FaleMais 120 (120 minutos).
 A VxTel, preocupada com a transparência junto aos seus clientes, quer disponibilizar uma
