@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <link rel="shortcut icon" href="https://cdn.vortx.com.br/images/imgs/favicon.ico">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VxTel</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="myHeader">
+    <div class="myLogo">
+      <img src="img/logo.png" height="40" width="210">
+    </div>
+  </div>
+  <div class="myContainer">
+
+    <div class="myContent">
+      <div class="information">
+        <div class="title">Conheça o nosso mais novo plano, <span class="spanStyle">Fale Mais</span> VxTel!</div>
+        <div class="subTitle">Calcule de forma <span class="spanStyle">rápida</span> o valor de sua ligação!</div>
+        <form id="myForm">
+          <div class="form-div">
+            <label class="input-required">Origem:</label>
+            <select id="origem" class="selectInput" required>
+              <option selected disabled>Selecione uma das opções...</option>
+              <option>011</option>
+              <option>016</option>
+              <option>017</option>
+              <option>018</option>
+            </select>
+          </div>
+
+          <div class="form-div">
+            <label class="input-required">Destino:</label>
+            <select id="destino" class="selectInput" required>
+              <option selected disabled>Selecione uma das opções...</option>
+              <option>011</option>
+              <option>016</option>
+              <option>017</option>
+              <option>018</option>
+            </select>
+          </div>
+
+          <div class="form-div">
+            <label class="input-required">Plano:</label>
+            <select id="plano" class="selectInput" required>
+              <option selected disabled>Selecione o plano desejado...</option>
+              <option>FaleMais 30</option>
+              <option>FaleMais 60</option>
+              <option>FaleMais 120</option>
+            </select>
+          </div>
+
+          <div class="form-div-last">
+            <label class="input-required">Tempo:</label>
+            <input id="minutos" class="timeInput" type="text" maxlength="4"
+              onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+              placeholder="Digite quanto tempo em minutos..." required>
+          </div>
+
+          <input class="btnEnviar" type="submit">
+        </form>
+      </div>
+
+
+      <div class="feedback">
+        <div class="line"></div>
+
+        <div class="feedback-title">Adquira agora mesmo seu plano Fale Mais!</div>
+        <div class="feedback-subTitle">Preencha o formulário ao lado e compare agora mesmo as vantagens do nosso plano
+        </div>
+
+        <div>
+          <div>
+            <div class="valorPlano">Valor com plano:</div>
+            <p id="resultPlan" class="planoPreco">R$0.00</p>
+          </div>
+          <div>
+            <div class="valorSemPlano">Valor sem plano:</div>
+            <p id="resultNoPlan" class="semPlanoPreco">R$0.00</p>
+          </div>
+        </div>
+        <div id="msgError" class="msgError">
+          <div class="info-error">
+            <img src="img/error.png" class="imgError" height="25px" class="" alt="Error">
+            <div class="errorPipe"></div>
+            Desculpe, por enquanto ainda não temos nenhum plano para essa região ):
+          </div>
+        </div>
+
+        <div id="msgError2" class="msgError2">Mas não se preocupe, estamos trabalhando para estender nossos
+          planos para todas regiões</div>
+        <div class="contratar">
+          <button id="btnContratar" class="btnContratar">Contratar!</button>
+        </div>
+      </div>
+
+    </div>
+    <!-- <footer class="footer">VxTel © 2021</footer> -->
+  </div>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
